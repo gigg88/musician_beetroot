@@ -1,4 +1,75 @@
 * {
   margin: 0;
   padding: 0;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+:root {
+  --standard_txt_cl: #FFFFFF;
+  --bg-cl: #000000;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+}
+
+body {
+  background-color: var(--bg-cl);
+  font-family: "Source Sans 3", sans-serif;
+  color: var(--standard_txt_cl);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 568px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.header {
+  padding-top: 150px;
+}
+
+.hero_content_txt {
+  display: flex;
+  flex-direction: column;
+}
+.hero_content_txt h1 {
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-weight: var(--font-weight-medium);
+  font-size: 36px;
+  line-height: 39.6px;
+  letter-spacing: -0.8px;
+}
+.hero_content_txt p {
+  font-weight: var(--font-weight-regular);
+  font-size: 12px;
+  line-height: 18px;
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero_content_img {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.hero_content_img picture {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero_pict {
+  width: 100%;
+  display: block;
 }

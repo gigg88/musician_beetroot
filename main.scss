@@ -100,7 +100,7 @@ a{
 
      //tablet
      @media  screen and (min-width: 568px) {
-        width: ;   
+          
      }
      
      //Desktop
@@ -116,9 +116,14 @@ a{
 
 
 .hero_content_txt {
+    
     display: flex;
     flex-direction: column;
     width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 150px;
+    
 
     h1 {
         font-family: 'Poppins', sans-serif;

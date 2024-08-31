@@ -21,9 +21,23 @@ body {
   color: var(--standard_txt_cl);
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 585px;
+}
+
 .container {
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
+  display: flex;
 }
 
 ul {
@@ -43,20 +57,21 @@ a {
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .hero_left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .hero_content_txt {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  width: 80%;
 }
-.hero_content_txt h1 {
-  text-align: left;
+
+.hero_content {
+  display: flex;
+  align-items: center;
 }

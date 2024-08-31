@@ -9,7 +9,7 @@
     --standard_txt_cl: #FFFFFF;
     --bg-cl: #000000;
 
-    --font-weight-regular: 400;
+    --font-weight-regular: 300;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-extra-bold: 800;
@@ -31,14 +31,37 @@ body {
 img{
     display: block;
     width: 100%;
-    max-width: 585px;
+    max-width: 320px;
+
+      //tablet
+      @media  screen and (min-width: 568px) {
+        width: 80%;   
+     }
+     
+     //Desktop
+     @media  screen and (min-width: 1200px) {
+        width: 100%;
+        max-width: 585px;
+     }
 }
 
 .container {
     width: 80%;
-    max-width: 1200px;
+    max-width: 320px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+
+    //tablet
+    @media  screen and (min-width: 568px) {
+        width: 80%;   
+     }
+     
+     //Desktop
+     @media  screen and (min-width: 1200px) {
+         max-width: 1200px;
+         width: 100%;
+     }
        
 }
 
@@ -51,12 +74,18 @@ a{
     text-decoration: none;
 }
 
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .nav_list {
     display: flex;
     align-items: center;
     column-gap: 28px;
-}
+    padding-top: 68px;
+    
+} 
 
 .wrapper{
     display: flex;
@@ -67,22 +96,96 @@ a{
 .hero_left {
     display: flex;
     flex-direction: column;
+    
+
+     //tablet
+     @media  screen and (min-width: 568px) {
+        width: ;   
+     }
+     
+     //Desktop
+     @media  screen and (min-width: 1200px) {
+         max-width: 1200px;
+         width: 40%;
+     }
  }
 
-
+.hero_left {
+    display: flex;
+}
 
 
 .hero_content_txt {
     display: flex;
     flex-direction: column;
     width: 80%;
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: var(--font-weight-medium);
+        font-size: 36px;
+        line-height: 39.6px;
+        letter-spacing: -0.8px;
+        margin-bottom: 15px;
+
+        //tablet
+     @media  screen and (min-width: 568px) {
+           
+     }
+     
+     //Desktop
+     @media  screen and (min-width: 1200px) {
+        font-weight: var(--font-weight-medium);
+        font-size: 84px;
+        line-height: 102px;
+        letter-spacing: -2px;
+        margin-bottom: 43.8px;
+     }
+    }
+
+    p {
+       font-weight: var(--font-weight-regular);
+       font-size: 12px;
+       line-height: 18px; 
+
+           //tablet
+     @media  screen and (min-width: 568px) {
+           
+     }
+     
+     //Desktop
+     @media  screen and (min-width: 1200px) {
+        font-weight: var(--font-weight-regular);
+        font-size: 22px;
+        line-height: 34px; 
+
+     }
+       
+    }
+
+
 }
 
 .hero_content {
-    display: flex;
-    align-items: center;
-  }
+    display: flex; 
+    align-items: center; 
+    
+ }
 
+ .hero_content_img{
+    
+
+           //tablet
+           @media  screen and (min-width: 568px) {
+           
+           }
+           
+           //Desktop
+           @media  screen and (min-width: 1200px) {
+            padding-top: 60px;
+      
+           }
+ }
 
 
 

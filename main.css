@@ -78,8 +78,8 @@ a {
 @media screen and (max-width: 568px) {
   .nav_list a {
     font-size: 42px;
-    padding: 30px 0;
-    border-bottom: 2px solid #eee2e2;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
 }
 @media screen and (max-width: 568px) {

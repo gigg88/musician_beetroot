@@ -143,9 +143,9 @@ a{
     display: flex;
     flex-direction: column;
     width: 80%;
-    
     margin: 0 auto;
     padding-top: 150px;
+    align-items: center;
     
 
     h1 {
@@ -154,7 +154,8 @@ a{
         font-size: 36px;
         line-height: 39.6px;
         letter-spacing: -0.8px;
-        margin-bottom: 14px;
+        margin-bottom: 15px;
+        
         
 
         //tablet
